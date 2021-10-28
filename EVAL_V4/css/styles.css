@@ -1,0 +1,356 @@
+/* Champs caché */
+.info{
+	display: none;
+}
+/* Page entière */
+*{
+	margin: initial;
+	font-family: Bookman, URW Bookman L, serif;
+}
+
+html, body{
+	margin: auto;
+	width: 100%;
+}
+
+html{
+	background: url(../img/fond.png) no-repeat center fixed;
+	text-align: justify;
+	background-size: cover;
+}
+
+/*Corps de page */
+
+body{
+	background-attachment: scroll;
+	/* min-height: 1024px; */
+	display: block;
+	position: absolute;
+	overflow-y: scroll;
+}
+
+main{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	margin: auto 10%;
+	padding: 5px 0;
+}
+
+/* Page Acceuil */
+.bienvenue {
+    text-align: center;
+    background-color: rgba(255,255,255,.5);
+    color: #D52929;
+}
+
+.identification {
+	text-align: center;
+    background-color: rgba(255,255,255,.9);
+}
+
+
+/* Titre de page */
+h1{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+/* Ligne separatrice */
+hr{
+	width:100%;
+}
+
+/* Menu navigation */
+nav{
+	position: sticky;
+	top: 0;
+	width:100%;
+	
+}
+nav ul{
+	list-style-type: none;
+	padding: 2px;
+	font-size: 1.5rem;
+	background-color: #D11313;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 17px 17px;
+    text-decoration: none;
+}
+
+nav a:hover, a:active {
+    background-color: blue;
+}
+
+nav li{
+	border-radius: 10px;
+	text-align: center;
+	background-color: #0B59A6;
+}
+
+ul li{
+	list-style-type: none;
+	margin: auto;
+	flex-basis: calc(90%/7);
+}
+
+/* Element cliquable */
+.evenement a{
+	font-size: 2em;
+}
+
+.evenement a:hover{
+	background-color: black;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/* Vote */
+
+.vote{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+}
+
+.vote a{
+	color: #aaa;
+	font-size: 2em;
+	transition: color .2s;
+	padding-left: 10px;
+}
+
+.vote a:hover, .vote a:focus, .voye a:hover ~ a, .vote a:focus ~ a {
+   color: gold;
+   cursor: pointer;
+}
+
+/* Page Consultation Complete */
+
+.consult{
+	background-color: white;
+	margin: 0 1.5%;
+	width: 60%;
+	padding:15px;
+}
+
+aside{
+	width: 30%;
+	float: right;
+	font-style: italic;
+	color: black;
+	background-color: white;
+	padding: 0 2%;
+	margin : 0 15px 0 0;
+	
+}
+
+/* Bloc d'information */
+
+div{
+	padding-bottom: 5px;
+}
+
+.evenement{
+	margin: 5px 10px;
+	padding: 5px;
+	border: 2px solid white;
+	background-color: white;
+	width: calc(100%/1 - 40px);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Position a gauche */
+.left{
+	float: left;
+	width: 40%;
+	padding-left: 40px;
+}
+
+/* Position à droite */
+.right{
+	float: right;
+	width: 40%;
+	padding-right: 40px;
+	margin-left:15%;
+}
+
+/* Coordonné contact */
+.coordonne{
+	background-color: rgba(255,255,255,1);
+	margin: auto;
+	padding : 30px 0 30px 100px;
+}
+
+textarea{
+	width: 90%;
+}
+
+/* Page recherche */
+.search{
+	background-color: rgba(255,255,255,.8);
+	margin: 0 30%;
+	padding: 30px;
+	text-align: center;
+}
+label{
+	display:inline-block;
+	width: 100%;
+}
+label.radio{
+    display: inline;
+}
+label.radio::after{
+	content: "";
+}
+input[type=text], input[type=range],input[type=date], input[type=email],input[type=password],input[type=url],select{
+	width: 200px;
+	margin-bottom: 5px;
+}
+
+/* Page inscription */
+.inscription{
+	padding: 30px;
+	margin: auto;
+}
+
+.connexion{
+	text-align: center;
+	background-color: rgba(255,255,255,.3);
+	margin: auto;
+	padding: 30px;
+}
+
+/* Page profil */
+.propose{
+	float:right;
+	border-radius : 10px;
+	background-color: black;
+	text-align: center;
+}
+
+.nouveau{
+	display: block;
+	color:white;
+	padding: 14px 16px;
+	border-bottom: 1px solid white;
+}
+
+.nouveau:hover, .nouveau:active{
+	background-color: green;
+}
+
+.notif{
+	background-color: white;
+	padding: 10px;
+}
+
+/* Image */
+
+
+#imageEve{
+    width: 90%;
+}
+.sousImage{
+    width: 25%;
+}
+.imgInteress{
+    width: 50%;
+}
+.imgPageEve{
+    width: 20%;
+	padding: 20px 0 0 30px;
+}
+
+/* Bouton follow*/
+.follow{
+    display: block;
+    padding: 1em 2em;
+    outline: none;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: #3498db;
+    border: 1px solid #1f74ac;
+    border-radius: 0.3em;
+    margin-top: 4em;
+    cursor: pointer;
+}
+.follow:hover {
+    background-color: #2487c9;
+}
+
+/* Bas de page */
+footer{
+	background-color: #0B59A6;
+	padding: 10px;
+	/* width: 100%; */
+	/* position: absolute; */
+	bottom: -1500px;
+	margin-top: 20px;
+	margin-bottom:0;
+	left: 0px;
+}
+.cont{
+	display: flex;
+}
+
+.partage{
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+.shareValidate{
+	margin-right: 80%;
+}
+
+#partage{
+	margin-bottom: 50px;
+}
+/*Cookie bannier */
+.cookie-alert {
+   position: fixed;
+   bottom: 50%;
+   right:50%;
+   border-radius: 10px;
+   background:#2f2f2f;
+   color:#fff;
+   padding:10px 15px;
+   width:280px;
+   z-index:100;
+}
+.cookie-alert a { 
+   display:block;
+   text-align: center;
+   padding:5px 10px;
+   margin:8px auto 0 auto;
+   border-radius: 10px;
+   background:transparent;
+   border: 2px solid #46A2D9;
+   color:#46A2D9;
+   transition: all .3s ease;
+}
+   .cookie-alert a:hover {
+      background: #46A2D9;
+      color:#2f2f2f;
+   }
+@media only screen and (max-width:480px) {
+   .cookie-alert {
+      text-align: center;
+      left: 0; right: 0;;
+        margin: 0 auto;
+      max-width:700px;
+      padding:10px 30px;
+   }
+}
